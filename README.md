@@ -33,6 +33,20 @@ Recursing once resets the pointers and reduces the search space by half the numb
 
  **Runtime:** O(log(n))
  
+### Linear Search
+Linear search is iterating over every element in the data structure one by one until the desired value is found.
+
+An example:
+````
+  array[5] = {0,2,4,6,8}
+  int searchTerm = 6;
+  for(int i = 0; i < array.length; i++)
+    if(array[i] == searchTerm)
+      return i;
+      
+  return -1;  // searchTerm not found
+````
+
 ## Trees
 ### Binary Search Tree
 A binary tree (each node has only two branches) in which the left subtree is always lesser and the right subtree is always greater than the value of the current node. (Duplicates vary according to the implementation).
