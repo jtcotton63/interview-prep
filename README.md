@@ -48,6 +48,30 @@ An example:
 ````
 
 ## Sorts
+### Bubble sort
+[Bubble sort video](https://www.youtube.com/watch?v=P00xJgWzz2c)
+
+Psuedocode:
+````
+for i = (n - 1) to 1
+	for j = 0 to (i - 1)
+		if array[j] > array[j + 1]
+			swap(array[j], array[j + 1]);
+
+````
+
+### Heap sort
+Add all the elements to a sorted heap implementation. The heap should resort the heap every time a new element is inserted.
+[Heap implementation video](https://www.youtube.com/watch?v=v1YUApMYXO4)
+[Heap sort video](https://www.youtube.com/watch?v=6NB0GHY11Iw)
+
+### Insertion sort
+Psuedocode:
+ * Insert element into array
+ * If it has a smaller value than the one at the index previous to it, swap them. Repeat until the previous element has a smaller value than the current element
+ 
+[Insertion sort video](https://www.youtube.com/watch?v=c4BRHC7kTaQ)
+
 ### Merge sort
 Merge sort takes two sorted arrays and merges them into a larger array.
 
@@ -95,6 +119,7 @@ public void merge(int[] A, int[] B) {
 
 }
 ````
+[Merge sort video](https://www.youtube.com/watch?v=GCae1WNvnZM)
 
 ## Trees
 ### Binary Search Tree
