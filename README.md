@@ -47,6 +47,55 @@ An example:
   return -1;  // searchTerm not found
 ````
 
+## Sorts
+### Merge sort
+Merge sort takes two sorted arrays and merges them into a larger array.
+
+Psuedocode:
+````
+// First do something like this
+private void doMergeSort(int lowerIndex, int higherIndex) {
+     
+    if (lowerIndex < higherIndex) {
+        int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
+        // Below step sorts the left side of the array
+        doMergeSort(lowerIndex, middle);
+        // Below step sorts the right side of the array
+        doMergeSort(middle + 1, higherIndex);
+        // Now merge both sides
+        mergeParts(lowerIndex, middle, higherIndex);
+    }
+}
+
+// Then do something like this
+public void merge(int[] A, int[] B) {
+
+	int[] C = new int[A.length + B.length];
+
+	int aIndex = 0;
+	int bIndex = 0;
+	int cIndex = 0;
+
+	while(cIndex < C.length) {
+
+		int currMinValue = 0;
+
+		if(aIndex < A.length && A[aIndex] < B[bIndex]]) {
+			currMinValue = A[aIndex];
+			aIndex++;
+		} else {
+			currMinValue = B[bIndex];
+			bIndex++;
+		}
+
+		C[cIndex] = currMinValue;
+		cIndex++;
+
+	}
+
+}
+````
+
 ## Trees
 ### Binary Search Tree
 A binary tree (each node has only two branches) in which the left subtree is always lesser and the right subtree is always greater than the value of the current node. (Duplicates vary according to the implementation).
