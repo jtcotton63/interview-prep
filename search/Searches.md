@@ -9,7 +9,7 @@ Divides the search space in half each time.
 Pretend that the target value is 13.
 
 Start by defining three points called start, middle, and end:
-![](https://github.com/jtcotton63/cs-basics/blob/master/images/searches/binary/define-pointers.png)
+![](https://github.com/jtcotton63/cs-basics/blob/master/search/binary/define-pointers.png)
 
 Evaluate the value at ````array[middle]````
 
@@ -26,7 +26,7 @@ There are three cases that can happen:
    * Recurse
  
 Recursing once resets the pointers and reduces the search space by half the number of elements:
-![](https://github.com/jtcotton63/cs-basics/blob/master/images/searches/binary/resetting-pointers.png)
+![](https://github.com/jtcotton63/cs-basics/blob/master/search/binary/resetting-pointers.png)
 
  **Runtime:** O(log(n))
  
