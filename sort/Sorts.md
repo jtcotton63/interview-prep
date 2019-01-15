@@ -10,6 +10,7 @@ for i = (n - 1) to 1
 			swap(array[j], array[j + 1]);
 
 ````
+Runtime is O(n^2) [source](https://stackoverflow.com/questions/7954129/runtime-of-bubble-simple-sort)
 
 ## Heap sort
 Add all the elements to a sorted heap implementation. The heap should resort the heap every time a new element is inserted.
