@@ -17,12 +17,16 @@ Add all the elements to a sorted heap implementation. The heap should resort the
 [Heap implementation video](https://www.youtube.com/watch?v=v1YUApMYXO4)
 [Heap sort video](https://www.youtube.com/watch?v=6NB0GHY11Iw)
 
+Runtime: O(nLogn)
+
 ## Insertion sort
 Psuedocode:
  * Insert element into array
  * If it has a smaller value than the one at the index previous to it, swap them. Repeat until the previous element has a smaller value than the current element
  
 [Insertion sort video](https://www.youtube.com/watch?v=c4BRHC7kTaQ)
+
+Runtime: O(n^2)
 
 ## Merge sort
 Merge sort takes two sorted arrays and merges them into a larger array.
@@ -72,3 +76,12 @@ public void merge(int[] A, int[] B) {
 }
 ````
 [Merge sort video](https://www.youtube.com/watch?v=GCae1WNvnZM)
+
+Runtime: O(nlogn)
+
+## Selection sort
+Sorts the entire list for the smallest item, and moves it to the first position.
+Then does the same for (i + 1, n)
+Then does the same for (i + 2, n), etc
+
+Runtime: O(n^2)
