@@ -22,7 +22,13 @@ The goal of SOLID is the creation of mid-level software structures that tolerate
 ## Types of programming
 
 * Imperative: statements change a program's state ([src](https://en.wikipedia.org/wiki/Imperative_programming)).
-* Declarative: the language itself is concerned with declaring **what** you want done, as opposed to **how** it should be done.
-  * SQL, HTML are declarative
-  * Other languages can be *either* depending on how they're used
-  * Great article [here](https://ui.dev/imperative-vs-declarative-programming/).
+  * Golang is imperative and pro ([link]()
+* Procedural: the language makes use of sets of commands, called procedures, which can be invoked in any order the programmer pleases. These are an extension of imperative languages, since procedures are just reusable sets of imperative statements.
+* Declarative: the programmer uses the language to specify **what** should be done, as opposed specifying **how** it should be done.
+  * SQL, HTML, React are declarative
+    * SQL declares what information should be retrieved, not how the DB engine should retrieve it 
+    * React declares what should be done to the DOM, not how it should be done
+  * Great article [here](https://ui.dev/imperative-vs-declarative-programming/) and [here](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2).
+* Functional: a form of declarative programming, except that all calls are done via [pure functions](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976) and all state is immutable.
+  * Functional programming leverages a set of expressions that map values to other values ([source](https://en.wikipedia.org/wiki/Functional_programming)).
+  * Advantages of functional programming are listed [here](https://medium.com/@geisonfgfg/functional-go-bc116f4c96a4).
